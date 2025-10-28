@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Diaper Monitor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="main">
+      <div class="header">
+        <div class="title">Smart Diaper Monitor</div>
+        <div class="small">Baby — Room A</div>
+      </div>
+
+      <div class="body">
+        <div class="baby-illustration" id="babyToggle">
+          <!-- Baby icon -->
+          <svg width="110" height="110" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="32" cy="24" r="12" fill="#ffd7b5" />
+            <path d="M18 46c0-7.5 6-14 14-14s14 6.5 14 14v4H18v-4z" fill="#ffe9d6"/>
+            <circle cx="27" cy="22" r="1.6" fill="#5b3b2a"/>
+            <circle cx="37" cy="22" r="1.6" fill="#5b3b2a"/>
+            <path d="M26 28c2 2 10 2 12 0" stroke="#5b3b2a" stroke-width="1" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+
+        <div id="statusPill" class="status-pill status-dry">Dry</div>
+        <div id="meta" class="meta">Click the baby image to toggle status</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
